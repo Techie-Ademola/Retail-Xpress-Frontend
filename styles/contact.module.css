@@ -1,0 +1,81 @@
+.grocery_shop_container {
+    position: relative;
+    background: white;
+    padding: 15px 130px;
+    list-style-type: none;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+@media screen and (max-width:1400px) {
+    .grocery_shop_container {
+        padding: 15px 50px;
+    }
+
+}
+@media screen and (max-width:800px) {
+    .grocery_shop_container {
+        padding: 15px 20px;
+    }
+}
+
+
+/* Contact Section styles */
+.contactpg_wrap h5 {
+    font-weight: 700;
+}
+.contact_handle_wrap, .contact_input_wrap {
+    background: #F9FAFB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 110vh;
+    max-width: 100%;
+    /* margin: auto; */
+    height: 100%;
+}
+.contact_input_wrap {
+    background: #fff !important;
+}
+.contact_handle {
+    width: 100%;
+}
+.contact_handle_wrap p {
+    color: #888;
+    font-size: 18px;
+}
+.contact_icon {
+    display: flex;
+    gap: 25px;
+}
+.phone_sect {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.contact_icon a {
+    font-size: 20px;
+    color: #777;
+    transition: .2s;
+}
+.contact_icon a:hover {
+    color: #111;
+}
+.contact_handle form input {
+    border: 1px solid #ced4da;
+    padding: 25px 15px;
+    box-shadow: none !important;
+}
+.contact_handle form textarea {
+    border: 1px solid #ced4da;
+    padding: 10px;
+    box-shadow: none !important;
+}
+.contact_handle form button {
+    background: #1E3A8A;
+    color: white;
+}
+.contact_handle form button:hover {
+    background: #2240AF;
+    color: white;
+}

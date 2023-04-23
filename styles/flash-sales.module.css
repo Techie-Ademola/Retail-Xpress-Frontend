@@ -1,0 +1,322 @@
+/* Flash sales Hero styles */
+
+.flash_hero_wrapper {
+    position: relative;
+    background: transparent;
+    padding: 15px 130px;
+    list-style-type: none;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.flash_hero_container {
+    padding: 6em 4em;
+    background: linear-gradient(290deg, #2240AF 35%, #080708 30%);
+}
+.flash_hero_container h1 {
+    font-size: 7.3vw;
+}
+.flash_hero_container p {
+    font-size: 2em;
+}
+@media screen and (max-width:1400px) {
+    .flash_hero_wrapper {
+        padding: 15px 50px;
+    }
+    .flash_hero_container {
+        padding: 4em 3em;
+    }
+
+
+}
+@media screen and (max-width:800px) {
+    .flash_hero_wrapper {
+        padding: 15px 10px;
+    }
+    .flash_hero_container {
+        padding: 2.5em 1.5em;
+    }
+    .flash_hero_container h1 {
+        font-size: 2.5em;
+    }
+    .flash_hero_container p {
+        margin-top: 20px;
+        font-size: 1.3em;
+    }
+}
+
+/* top categories styles */
+
+.top_cat_wrapper {
+    position: relative;
+    /* background: #FAFAFA; */
+    padding: 15px 130px;
+    list-style-type: none;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.cat_timer_wrap {
+    overflow-x: hidden;
+}
+.cat_timer_wrap ul {
+    overflow-x: scroll;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: #fff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.cat_timer_wrap ul::-webkit-scrollbar,
+.cat_timer_wrap ul::-webkit-scrollbar-track {
+    appearance: none;
+    display: none;
+}
+.cat_timer_wrap ul li {
+    display: inline-block;
+    padding: 20px;
+    width: 100%;
+    font-size: 17px;
+    white-space: nowrap;
+}
+.top_categories .top_categories_img {
+    width: 130px;
+    height: 130px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F5F5F5;
+}
+.top_categories h4 {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+.top_categories a, .top_categories a:hover {
+    color: #111;
+    text-decoration: none;
+}
+.top_cat_body {
+    overflow: hidden;
+}
+.top_cat_row {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    overflow-x: scroll;
+}
+.top_cat_row::-webkit-scrollbar,
+.top_cat_row::-webkit-scrollbar-track {
+    appearance: none;
+    display: none;
+}
+@media screen and (max-width:1400px) {
+    .top_cat_wrapper {
+        padding: 15px 50px;
+    }
+    .top_cat_row {
+        padding: 0 40px;
+    }
+}
+@media screen and (max-width:800px) {
+    .top_cat_wrapper {
+        padding: 15px 10px;
+    }
+    .top_cat_head h2 {
+        font-size: 20px;
+    }
+    .top_cat_body h4 {
+        font-size: 18px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .flash_carousel_row {
+        padding: 0 40px;
+    }
+}
+
+
+/* Grocery shop styles */
+
+.grocery_shop_container {
+    position: relative;
+    background: transparent;
+    padding: 15px 130px;
+    list-style-type: none;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.grocery_shop_container .flash_container_head {
+    background: #2240AF;
+    color: white;
+    padding: 10px 30px;
+
+}
+.aside_wrapper {
+    height: 100%;
+    padding: 8em 0 0;
+    overflow: hidden;
+}
+.aside_wrapper h5 i {
+    font-size: 1.7em;
+    line-height: 0;
+    vertical-align: middle;
+}
+.aside_wrap {
+    color: #777;
+    font-size: 18px;
+}
+.aside_wrap .flexed span {
+    background: #D1D5DB;
+    padding: 7px 15px !important;
+}
+.aside_select {
+    position: relative;
+    padding: 15px 15px 15px 0;
+    display: block;
+    width: 100%;
+    /* height: max-content; */
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    background: transparent;
+    cursor: pointer;
+}
+.aside_select option {
+    position: absolute;
+    background: #eee;
+    color: #666;
+    font-size: 16px;
+
+}
+.aside_select option:hover {
+    background-color: #080708 !important;
+}
+.aside_select option::before, .aside_select option::after {
+    content: '';
+    padding: 20px !important;
+    display: inline-block;
+    /* width: 10px;
+    height: 10px; */
+    margin-right: 10px;
+    background-color: #ccc !important;
+}
+
+/* Home Flash Carousel styles */
+
+.grocery_shop_container .flash_carousel_body {
+    overflow: hidden;
+}
+.grocery_shop_container .flash_carousel_row {
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+}
+.grocery_shop_container .flash_carousel_row::-webkit-scrollbar,
+.grocery_shop_container .flash_carousel_row::-webkit-scrollbar-track {
+    appearance: none;
+    display: none;
+}
+.grocery_shop_container .flash_carousel {
+    position: relative;
+    background: whitesmoke;
+    padding: 15px;
+    border-radius: 10px;
+    width: fit-content;
+}
+.grocery_shop_container .flash_carousel_img {
+    border-radius: 5px;
+    padding: 15px;
+    background: #D1D5DB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    overflow: hidden;
+}
+.grocery_shop_container .flash_carousel_img img {
+    width: 170px;
+    transition: .3s;
+}
+.grocery_shop_container .flash_price {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.grocery_shop_container .category_name {
+    color: #2240AF;
+}
+.grocery_shop_container .category_title {
+    font-size: 18px;
+    color: #111;
+}
+.grocery_shop_container .category_new_price {
+    font-size: 18px;
+    color: #DA4632;
+    transition: .3s;
+}
+.grocery_shop_container .category_prev_price {
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    opacity: 0;
+    transition: .3s;
+    text-decoration: line-through 1px;
+    color: #777;
+    /* text-decoration-thickness: ; */
+}
+.grocery_shop_container .flash_carousel:hover .category_new_price {
+    transform: translateY(-25px);
+}
+.grocery_shop_container .flash_carousel:hover .category_prev_price {
+    opacity: 1;
+}
+.grocery_shop_container .flash_cart_wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 20px;
+    background: whitesmoke;
+    padding: 2px 7px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: .5s;
+}
+.grocery_shop_container .flash_carousel:hover .flash_cart_wrap {
+    opacity: 1;
+    z-index: 99;
+}
+.grocery_shop_container .flash_carousel:hover .flash_carousel_img img {
+    transform: scale(1.1);
+}
+.grocery_shop_container .flash_cart_wrap span {
+    font-size: 24px;
+    color: #2240AF;
+    cursor: pointer;
+    transition: .3s;
+}
+.grocery_shop_container .flash_cart_wrap span:hover {
+    color: #DA4632;
+}
+
+@media screen and (max-width:1400px) {
+    .grocery_shop_container {
+        padding: 15px 50px;
+    }
+
+}
+@media screen and (max-width:800px) {
+    .grocery_shop_container {
+        padding: 15px 10px;
+    }
+    .grocery_shop_container .flash_carousel_row {
+        padding: 0 40px;
+    }
+    .flash_container_head h3 {
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+}

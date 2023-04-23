@@ -1,0 +1,227 @@
+/* Grocery shop styles */
+
+.grocery_shop_container {
+    position: relative;
+    background: transparent;
+    padding: 15px 130px;
+    list-style-type: none;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.grocery_shop_container .flash_container_head {
+    background: #2240AF;
+    color: white;
+    padding: 10px 30px;
+
+}
+.aside_wrapper {
+    height: 100%;
+    padding: 1em 0 0;
+    overflow: hidden;
+}
+.aside_wrapper h5 i {
+    font-size: 1.7em;
+    line-height: 0;
+    vertical-align: middle;
+}
+.aside_wrap {
+    color: #777;
+    font-size: 18px;
+}
+.aside_wrap .flexed span {
+    background: #D1D5DB;
+    padding: 7px 15px !important;
+}
+.aside_select {
+    padding: 15px 15px 15px 0;
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    background: transparent;
+}
+/* Home Flash Carousel styles */
+
+.grocery_shop_container .flash_carousel_body {
+    overflow: hidden;
+}
+.grocery_shop_container .flash_carousel_row {
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+}
+.grocery_shop_container .flash_carousel_row::-webkit-scrollbar,
+.grocery_shop_container .flash_carousel_row::-webkit-scrollbar-track {
+    appearance: none;
+    display: none;
+}
+.grocery_shop_container .flash_carousel {
+    position: relative;
+    background: whitesmoke;
+    padding: 15px;
+    border-radius: 10px;
+    width: fit-content;
+}
+.grocery_shop_container .flash_carousel_img {
+    border-radius: 5px;
+    padding: 15px;
+    background: #D1D5DB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    overflow: hidden;
+}
+.grocery_shop_container .flash_carousel_img img {
+    width: 170px;
+    transition: .3s;
+}
+.grocery_shop_container .flash_price {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.grocery_shop_container .category_name {
+    color: #2240AF;
+}
+.grocery_shop_container .category_title {
+    font-size: 18px;
+    color: #111;
+}
+.grocery_shop_container .category_new_price {
+    font-size: 18px;
+    color: #DA4632;
+    transition: .3s;
+}
+.grocery_shop_container .category_prev_price {
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    opacity: 0;
+    transition: .3s;
+    text-decoration: line-through 1px;
+    color: #777;
+    /* text-decoration-thickness: ; */
+}
+.grocery_shop_container .flash_carousel:hover .category_new_price {
+    transform: translateY(-25px);
+}
+.grocery_shop_container .flash_carousel:hover .category_prev_price {
+    opacity: 1;
+}
+.grocery_shop_container .flash_cart_wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 20px;
+    background: whitesmoke;
+    padding: 2px 7px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: .5s;
+}
+.grocery_shop_container .flash_carousel:hover .flash_cart_wrap {
+    opacity: 1;
+    z-index: 99;
+}
+.grocery_shop_container .flash_carousel:hover .flash_carousel_img img {
+    transform: scale(1.1);
+}
+.grocery_shop_container .flash_cart_wrap span {
+    font-size: 24px;
+    color: #2240AF;
+    cursor: pointer;
+    transition: .3s;
+}
+.grocery_shop_container .flash_cart_wrap span:hover {
+    color: #DA4632;
+}
+
+@media screen and (max-width:1400px) {
+    .grocery_shop_container {
+        padding: 15px 50px;
+    }
+
+}
+@media screen and (max-width:800px) {
+    .grocery_shop_container {
+        padding: 15px 20px;
+    }
+    .grocery_shop_container .flash_carousel_row {
+        padding: 0 40px;
+    }
+    .flash_container_head h3 {
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+}
+
+/* Official store styles */
+
+.nestle_brand_wrap {
+    border-radius: 10px;
+    background: transparent;
+}
+.nestle_brand_wrap .store_product {
+    position: relative;
+    background-position: bottom center;
+    overflow: hidden;
+    border-radius: 8px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nestle_brand_wrap .store_product::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    transition: .3s;
+}
+.nestle_brand_wrap .store_product:hover::before {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.nestle_brand_wrap .store_product img {
+    position: relative;
+    z-index: 5;
+    width: 100%;
+    aspect-ratio: 1;
+    transition: .3s;
+}
+.nestle_brand_wrap .store_product:hover img {
+    transform: scale(1.1);
+}
+.nestle_brand_wrap .brand_img_title {
+    display: inline-block;
+    color: #111;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+.nestle_brand_wrap a:hover  {
+    text-decoration: none;
+    color: #1E3A8A !important;
+}
+.nestle_brand_wrap a:hover .brand_img_title  {
+    text-decoration: none;
+    color: #1E3A8A !important;
+}
+@media screen and (max-width:800px) {
+    .flash_carousel_row {
+        padding: 0 40px;
+    }
+}
+@media screen and (max-width:500px) {
+    .nestle_brand_wrap .brand_img_title {
+        font-size: 16px;
+    }
+    .nestle_brand_wrap .store_product {
+        height: 100px;
+    }
+}

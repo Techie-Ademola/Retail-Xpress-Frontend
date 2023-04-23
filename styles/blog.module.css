@@ -1,0 +1,116 @@
+/* Blog Section Styles */
+
+.blog_sect_container {
+    position: relative;
+    background: transparent;
+    padding: 15px 130px;
+    list-style-type: none;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+@media screen and (max-width:1400px) {
+    .blog_sect_container {
+        padding: 15px 50px;
+    }
+}
+@media screen and (max-width:800px) {
+    .blog_sect_container {
+        padding: 15px 30px;
+    }
+}
+
+.blog_pg_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 15px;
+    width: 100%;
+    height: 25em;
+}
+.blog_hero_wrap {
+    align-items: center !important;
+}
+.blog_pg_img img {
+    width: 100%;
+}
+.blog_pg_content {
+    height: 100%;
+}
+.blog_pg_content p {
+    font-size: 18px;
+    color: #2240AF;
+}
+
+.blog_pg_content p:nth-of-type(2) {
+    font-size: 16px;
+    font-weight: 600;
+}
+.blog_pg_content h1 {
+    font-size: 3.2vw;
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: capitalize;
+}
+.main_blog p {
+    font-size: 18px;
+    width: 35em;
+    max-width: 95%;
+    margin: auto;
+}
+.blog_cards {
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3) !important;
+    border-radius: 10px;
+    overflow: hidden;
+    min-height: 35em;
+    /* min-width: 20em; */
+} 
+.blog_cards .blog_cards_topimg {
+    height: 15em;
+}
+.blog_cards_body {
+    padding: 1em 1.5em;
+}
+.blog_cards_body div {
+    color: #2240AF;
+    font-size: 15px;
+    font-weight: 600;
+}
+.blog_cards_body h4 {
+    font-size: 22px;
+    font-weight: 600;
+}
+.blog_cards_body p {
+    font-size: 17px;
+}
+.blog_sender_wrap {
+    display: flex;
+    align-items: center;
+    padding: 2em 1.5em;
+    gap: 20px;
+    /* border: 2px solid blue; */
+}
+.blog_sender_wrap .blog_sender_img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.blog_sender_wrap .blog_sender_img img {
+    width: 100%;
+}
+@media screen and (max-width: 600px) {
+    .blog_pg_img {
+        height: auto;
+    }
+    
+    .blog_pg_content h1 {
+        font-size: 2em;
+    }
+        
+    .blog_cards .blog_cards_topimg {
+        height: auto;
+    }
+}

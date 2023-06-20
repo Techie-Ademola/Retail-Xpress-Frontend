@@ -43,7 +43,6 @@ function Navbar() {
   };
 
   return (
-    // your navbar component
 
     <div>
 
@@ -130,9 +129,9 @@ function Navbar() {
                             <p className="m-0 font-weight-bold">070xxxxxxxx</p>
                         </div>
                       </div>
-                      <p className={`${Styles.checkout_nav_detail} font-weight-bold my-1`} >Orders</p>
+                      <p className={`${Styles.checkout_nav_detail} font-weight-bold my-1`} ><Link href="/order">Orders</Link></p>
                       <p className={`${Styles.checkout_nav_detail} font-weight-bold my-1`} >Pending reviews</p>
-                      <p className={`${Styles.checkout_nav_detail} font-weight-bold my-1`} >Saved items</p>
+                      <p className={`${Styles.checkout_nav_detail} font-weight-bold my-1`} ><Link href="/saved-items">Saved items</Link></p>
                     </div>
                   </Dropdown.Menu>
                 </Dropdown>

@@ -466,7 +466,17 @@
 .checkout_nav_detail {
     color: #39599F;
     font-size: 16px;
-    /* line-height: 1; */
+    line-height: 2;
+}
+.checkout_nav_detail a {
+    font-size: 16px !important;
+    text-decoration: none;
+    color: #39599F;
+}
+.checkout_nav_detail a:hover {
+    font-size: 16px !important;
+    text-decoration: none;
+    color: #222;
 }
 @media screen and (max-width: 500px) {
     .checkout_nav_dropdown {

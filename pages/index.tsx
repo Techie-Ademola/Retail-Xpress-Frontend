@@ -152,21 +152,21 @@ export default function Home() {
                                                 <div className="col-5">
                                                     <p>BEVERAGES</p>
                                                     <ul>
-                                                        <li><a href="">Water</a></li>
-                                                        <li><a href="">Coffee</a></li>
-                                                        <li><a href="">Beer</a></li>
-                                                        <li><a href="">Soft Drinks</a></li>
-                                                        <li><a href="">Wines</a></li>
-                                                        <li><a href="">Energy Drinks</a></li>
+                                                        <li><Link href="">Water</Link></li>
+                                                        <li><Link href="">Coffee</Link></li>
+                                                        <li><Link href="">Beer</Link></li>
+                                                        <li><Link href="">Soft Drinks</Link></li>
+                                                        <li><Link href="">Wines</Link></li>
+                                                        <li><Link href="">Energy Drinks</Link></li>
                                                     </ul>
                                                 </div>
                                                 <div className="col-5">
                                                     <p>BRANDS</p>
                                                     <ul>
-                                                        <li><a href="">Nestle</a></li>
-                                                        <li><a href="">Nestle</a></li>
-                                                        <li><a href="">Nestle</a></li>
-                                                        <li><a href="">Nestle</a></li>
+                                                        <li><Link href="">Nestle</Link></li>
+                                                        <li><Link href="">Nestle</Link></li>
+                                                        <li><Link href="">Nestle</Link></li>
+                                                        <li><Link href="">Nestle</Link></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -213,6 +213,7 @@ export default function Home() {
                         <li data-target="#carouselExampleCaptions" data-slide-to="0" className={`${Styles.active}`}></li>
                         <li data-target="#carouselExampleCaptions" data-slide-to="1" className={`${Styles.active}`}></li>
                         <li data-target="#carouselExampleCaptions" data-slide-to="2" className={`${Styles.active}`}></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="3" className={`${Styles.active}`}></li>
                       </ol>
                       <div className="carousel-inner mb-5 mb-md-0">
                         <div className={`${Styles.carousel_item} carousel-item  pb-5 active`}>
@@ -222,10 +223,11 @@ export default function Home() {
                             <h1>Grocery full of <br /> Inspiration</h1>
                             <p>Only this week. Don't miss .......</p>
                             <div className="mt-4 mt-md-5">
-                              <Link href="" className={`${Styles.hero_shop_btn}`} >Shop Now</Link>
+                              <Link href="/product-details" className={`${Styles.hero_shop_btn}`} >Shop Now</Link>
                             </div>
                           </div>
                         </div>
+
                         <div className={`${Styles.carousel_item} carousel-item  pb-5`}>
                           <img src="/images/hero-slider2.png" className="d-block w-50 ml-auto" alt="..." />
                           <div className={`${Styles.carousel_caption} carousel-caption `}>
@@ -233,10 +235,11 @@ export default function Home() {
                               <h1>Poland Spring <br /> Table Water</h1>
                               <p>Only this week. Don't miss .......</p>
                               <div className="mt-4 mt-md-5">
-                                  <Link href="" className={`${Styles.hero_shop_btn}`}>Shop Now</Link>
+                                  <Link href="/product-details" className={`${Styles.hero_shop_btn}`}>Shop Now</Link>
                               </div>
                           </div>
                         </div>
+
                         <div className={`${Styles.carousel_item} carousel-item  pb-5`}>
                           <img src="/images/hero-slider1.png" className="d-block ml-auto mr-5" style={{width: '400px'}} alt="..." />
                           <div className={`${Styles.carousel_caption} carousel-caption `}>
@@ -244,19 +247,23 @@ export default function Home() {
                               <h1>Grocery full of <br /> Inspiration</h1>
                               <p>Only this week. Don't miss .......</p>
                               <div className="mt-4 mt-md-5">
-                                  <Link href="" className={`${Styles.hero_shop_btn}`} >Shop Now</Link>
+                                  <Link href="/product-details" className={`${Styles.hero_shop_btn}`} >Shop Now</Link>
+                              </div>
+                          </div>
+                        </div>
+                        
+                        <div className={`${Styles.carousel_item} carousel-item  pb-5`}>
+                          <img src="/images/hero-slider2.png" className="d-block w-50 ml-auto" alt="..." />
+                          <div className={`${Styles.carousel_caption} carousel-caption `}>
+                              <p><small className="text-dark">EXCLUSIVE OFFER <span className="text-dark font-weight-bold p-2 rounded-pill">-40% OFF</span></small></p>
+                              <h1>Poland Spring <br /> Table Water</h1>
+                              <p>Only this week. Don't miss .......</p>
+                              <div className="mt-4 mt-md-5">
+                                  <Link href="/product-details" className={`${Styles.hero_shop_btn}`}>Shop Now</Link>
                               </div>
                           </div>
                         </div>
                       </div>
-                      {/* <!-- <button className={`${Styles.}`} "carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
-                        <span className={`${Styles.}`} "carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span className={`${Styles.}`} "sr-only">Previous</span>
-                      </button>
-                      <button className={`${Styles.}`} "carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
-                        <span className={`${Styles.}`} "carousel-control-next-icon" aria-hidden="true"></span>
-                        <span className={`${Styles.}`} "sr-only">Next</span>
-                      </button> --> */}
                     </div>
               </div>
           </div>
@@ -276,6 +283,7 @@ export default function Home() {
 
                 <div className={`${Styles.flash_carousel_body} py-3  mt-5`}>
                     <div className={`${Styles.flash_carousel_row} `}>
+                        <Link href="/product">
                         <div className={`${Styles.flash_carousel}`}>
                             <div className={`${Styles.flash_cart_wrap}`}>
                                 <span><i className="bi bi-heart"></i></span>
@@ -293,6 +301,8 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
+                        </Link>
+                        <Link href="/product">
                         <div className={`${Styles.flash_carousel}`}>
                             <div className={`${Styles.flash_cart_wrap}`} >
                                 <span><i className="bi bi-heart"></i></span>
@@ -310,6 +320,8 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
+                        </Link>
+                        <Link href="/product">
                         <div className={`${Styles.flash_carousel}`}>
                             <div className={`${Styles.flash_cart_wrap}`} >
                                 <span><i className="bi bi-heart"></i></span>
@@ -327,6 +339,8 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
+                        </Link>
+                        <Link href="/product">
                         <div className={`${Styles.flash_carousel}`}>
                             <div className={`${Styles.flash_cart_wrap}`} >
                                 <span><i className="bi bi-heart"></i></span>
@@ -344,6 +358,8 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
+                        </Link>
+                        <Link href="/product">
                         <div className={`${Styles.flash_carousel}`}>
                             <div className={`${Styles.flash_cart_wrap}`} >
                                 <span><i className="bi bi-heart"></i></span>
@@ -361,6 +377,8 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
+                        </Link>
+                        <Link href="/product">
                         <div className={`${Styles.flash_carousel}`}>
                             <div className={`${Styles.flash_cart_wrap}`} >
                                 <span><i className="bi bi-heart"></i></span>
@@ -378,6 +396,8 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
+                        </Link>
+                        <Link href="/product">
                         <div className={`${Styles.flash_carousel}`}>
                             <div className={`${Styles.flash_cart_wrap}`} >
                                 <span><i className="bi bi-heart"></i></span>
@@ -395,6 +415,8 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
+                        </Link>
+                        <Link href="/product">
                         <div className={`${Styles.flash_carousel}`}>
                             <div className={`${Styles.flash_cart_wrap}`} >
                                 <span><i className="bi bi-heart"></i></span>
@@ -412,6 +434,7 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
+                    </Link>
                     </div>
                 </div>
             </div>
@@ -440,7 +463,7 @@ export default function Home() {
                           <div className={`${Styles.offer_colon}`}>:</div>
                           <div className={`${Styles.offer_period}`}><p className="m-0 mb-1">54</p><small>Seconds</small></div>
                       </div>
-                      <p className={`${Styles.offer_buy} mt-5`}><Link className="btn" href="">Buy Now</Link></p>
+                      <p className={`${Styles.offer_buy} mt-5`}><Link className="btn" href="/product-details">Buy Now</Link></p>
                   </div>
               </div>
           </div>
@@ -455,7 +478,7 @@ export default function Home() {
               <div className={`${Styles.top_cat_body} py-3  mt-4`}>
                   <div className={`${Styles.top_cat_row}`}>
                       <div className={`${Styles.top_categories}`}>
-                          <Link href="">
+                          <Link href="/product">
                               <div className={`${Styles.top_categories_img}`}>
                                   <img className="w-100" src="./images/phone-img.png" alt="" />
                               </div>
@@ -463,7 +486,7 @@ export default function Home() {
                           </Link>
                       </div>
                       <div className={`${Styles.top_categories}`}>
-                          <Link href="">
+                          <Link href="/product">
                               <div className={`${Styles.top_categories_img}`}>
                                   <img className="w-100" src="./images/phone-img.png" alt="" />
                               </div>
@@ -471,7 +494,7 @@ export default function Home() {
                           </Link>
                       </div>
                       <div className={`${Styles.top_categories}`}>
-                          <Link href="">
+                          <Link href="/product">
                               <div className={`${Styles.top_categories_img}`}>
                                   <img className="w-100" src="./images/phone-img.png" alt="" />
                               </div>
@@ -479,7 +502,7 @@ export default function Home() {
                           </Link>
                       </div>
                       <div className={`${Styles.top_categories}`}>
-                          <Link href="">
+                          <Link href="/product">
                               <div className={`${Styles.top_categories_img}`}>
                                   <img className="w-100" src="./images/phone-img.png" alt="" />
                               </div>
@@ -487,7 +510,7 @@ export default function Home() {
                           </Link>
                       </div>
                       <div className={`${Styles.top_categories}`}>
-                          <Link href="">
+                          <Link href="/product">
                               <div className={`${Styles.top_categories_img}`}>
                                   <img className="w-100" src="./images/phone-img.png" alt="" />
                               </div>
@@ -495,7 +518,7 @@ export default function Home() {
                           </Link>
                       </div>
                       <div className={`${Styles.top_categories}`}>
-                          <Link href="">
+                          <Link href="/product">
                               <div className={`${Styles.top_categories_img}`}>
                                   <img className="w-100" src="./images/phone-img.png" alt="" />
                               </div>
@@ -521,7 +544,7 @@ export default function Home() {
                                   <img className="float-right" src="./images/offsect_img1.png" alt="" />
                               </div>
                           </div>
-                          <Link href="" className={`${Styles.discount_sect_button}`}><span className="bi bi-chevron-right"></span></Link>
+                          <Link href="/product" className={`${Styles.discount_sect_button}`}><span className="bi bi-chevron-right"></span></Link>
                       </div>
                   </div>
                   <div className="col-6">
@@ -535,7 +558,7 @@ export default function Home() {
                                   <img className="float-right" src="./images/offsect_img2.png" alt="" />
                               </div>
                           </div>
-                          <Link href="" className={`${Styles.discount_sect_button}`}><span className="bi bi-chevron-right"></span></Link>
+                          <Link href="/product" className={`${Styles.discount_sect_button}`}><span className="bi bi-chevron-right"></span></Link>
                       </div>
                   </div>
               </div>
@@ -549,289 +572,321 @@ export default function Home() {
                       <h3>Grocery Shop</h3>
                   </div>
                   <div className={`${Styles.flash_head3} d-none d-md-inline`}>
-                      <Link href="">View more</Link>
+                      <Link href="/product">View more</Link>
                   </div>
               </div>
 
               <div className={`${Styles.flash_carousel_body} py-3  mt-3`}>
                   <div className={`${Styles.flash_carousel_row}`}>
-                      <div className={`${Styles.flash_carousel}`}>
-                          <div className={`${Styles.flash_cart_wrap}`}>
-                              <span><i className="bi bi-heart"></i></span>
-                              <span><i className="bi bi-cart3"></i></span>
-                          </div>
-                          <div className={`${Styles.flash_carousel_img}`}>
-                              <img src="./images/flash-img1.png" alt="" />
-                          </div>
-                          <div className={`${Styles.flash_carousel_caption}`}>
-                              <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
-                              <div className={`${Styles.flash_price}`}>
-                                  <p className={`${Styles.category_title} m-1 font-weight-bold`}>Nutella</p>
-                                  <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
-                                  <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div className={`${Styles.flash_carousel}`}>
-                          <div className={`${Styles.flash_cart_wrap}`}>
-                              <span><i className="bi bi-heart"></i></span>
-                              <span><i className="bi bi-cart3"></i></span>
-                          </div>
-                          <div className={`${Styles.flash_carousel_img}`}>
-                              <img src="./images/flash-img2.png" alt="" />
-                          </div>
-                          <div className={`${Styles.flash_carousel_caption}`}>
-                              <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
-                              <div className={`${Styles.flash_price}`}>
-                                  <p className={`${Styles.category_title} m-1 font-weight-bold`}>Golden Morn</p>
-                                  <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
-                                  <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div className={`${Styles.flash_carousel}`}>
-                          <div className={`${Styles.flash_cart_wrap}`}>
-                              <span><i className="bi bi-heart"></i></span>
-                              <span><i className="bi bi-cart3"></i></span>
-                          </div>
-                          <div className={`${Styles.flash_carousel_img}`}>
-                              <img src="./images/flash-img3.png" alt="" />
-                          </div>
-                          <div className={`${Styles.flash_carousel_caption}`}>
-                              <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
-                              <div className={`${Styles.flash_price}`}>
-                                  <p className={`${Styles.category_title} m-1 font-weight-bold`}>Poland Spring</p>
-                                  <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
-                                  <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div className={`${Styles.flash_carousel}`}>
-                          <div className={`${Styles.flash_cart_wrap}`}>
-                              <span><i className="bi bi-heart"></i></span>
-                              <span><i className="bi bi-cart3"></i></span>
-                          </div>
-                          <div className={`${Styles.flash_carousel_img}`}>
-                              <img src="./images/hero-slider1.png" alt="" />
-                          </div>
-                          <div className={`${Styles.flash_carousel_caption}`}>
-                              <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
-                              <div className={`${Styles.flash_price}`}>
-                                  <p className={`${Styles.category_title} m-1 font-weight-bold`}>Nutella</p>
-                                  <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
-                                  <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div className={`${Styles.flash_carousel}`}>
-                          <div className={`${Styles.flash_cart_wrap}`}>
-                              <span><i className="bi bi-heart"></i></span>
-                              <span><i className="bi bi-cart3"></i></span>
-                          </div>
-                          <div className={`${Styles.flash_carousel_img}`}>
-                              <img src="./images/flash-img1.png" alt="" />
-                          </div>
-                          <div className={`${Styles.flash_carousel_caption}`}>
-                              <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
-                              <div className={`${Styles.flash_price}`}>
-                                  <p className={`${Styles.category_title} m-1 font-weight-bold`}>Nutella</p>
-                                  <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
-                                  <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div className={`${Styles.flash_carousel}`}>
-                          <div className={`${Styles.flash_cart_wrap}`}>
-                              <span><i className="bi bi-heart"></i></span>
-                              <span><i className="bi bi-cart3"></i></span>
-                          </div>
-                          <div className={`${Styles.flash_carousel_img}`}>
-                              <img src="./images/flash-img2.png" alt="" />
-                          </div>
-                          <div className={`${Styles.flash_carousel_caption}`}>
-                              <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
-                              <div className={`${Styles.flash_price}`}>
-                                  <p className={`${Styles.category_title} m-1 font-weight-bold`}>Golden Morn</p>
-                                  <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
-                                  <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div className={`${Styles.flash_carousel}`}>
-                          <div className={`${Styles.flash_cart_wrap}`}>
-                              <span><i className="bi bi-heart"></i></span>
-                              <span><i className="bi bi-cart3"></i></span>
-                          </div>
-                          <div className={`${Styles.flash_carousel_img}`}>
-                              <img src="./images/flash-img3.png" alt="" />
-                          </div>
-                          <div className={`${Styles.flash_carousel_caption}`}>
-                              <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
-                              <div className={`${Styles.flash_price}`}>
-                                  <p className={`${Styles.category_title} m-1 font-weight-bold`}>Nutella</p>
-                                  <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
-                                  <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div className={`${Styles.flash_carousel}`}>
-                          <div className={`${Styles.flash_cart_wrap}`}>
-                              <span><i className="bi bi-heart"></i></span>
-                              <span><i className="bi bi-cart3"></i></span>
-                          </div>
-                          <div className={`${Styles.flash_carousel_img}`}>
-                              <img src="./images/hero-slider1.png" alt="" />
-                          </div>
-                          <div className={`${Styles.flash_carousel_caption}`}>
-                              <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
-                              <div className={`${Styles.flash_price}`}>
-                                  <p className={`${Styles.category_title} m-1 font-weight-bold`}>Nutella</p>
-                                  <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
-                                  <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
-                              </div>
-                          </div>
-                      </div>
+                      <Link href="/product">
+                        <div className={`${Styles.flash_carousel}`}>
+                            <div className={`${Styles.flash_cart_wrap}`}>
+                                <span><i className="bi bi-heart"></i></span>
+                                <span><i className="bi bi-cart3"></i></span>
+                            </div>
+                            <div className={`${Styles.flash_carousel_img}`}>
+                                <img src="./images/flash-img1.png" alt="" />
+                            </div>
+                            <div className={`${Styles.flash_carousel_caption}`}>
+                                <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
+                                <div className={`${Styles.flash_price}`}>
+                                    <p className={`${Styles.category_title} m-1 font-weight-bold`}>Nutella</p>
+                                    <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
+                                    <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
+                                </div>
+                            </div>
+                        </div>
+                      </Link>
+                      <Link href="/product">
+                        <div className={`${Styles.flash_carousel}`}>
+                            <div className={`${Styles.flash_cart_wrap}`}>
+                                <span><i className="bi bi-heart"></i></span>
+                                <span><i className="bi bi-cart3"></i></span>
+                            </div>
+                            <div className={`${Styles.flash_carousel_img}`}>
+                                <img src="./images/flash-img2.png" alt="" />
+                            </div>
+                            <div className={`${Styles.flash_carousel_caption}`}>
+                                <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
+                                <div className={`${Styles.flash_price}`}>
+                                    <p className={`${Styles.category_title} m-1 font-weight-bold`}>Golden Morn</p>
+                                    <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
+                                    <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
+                                </div>
+                            </div>
+                        </div>
+                      </Link>
+                      <Link href="/product">
+                        <div className={`${Styles.flash_carousel}`}>
+                            <div className={`${Styles.flash_cart_wrap}`}>
+                                <span><i className="bi bi-heart"></i></span>
+                                <span><i className="bi bi-cart3"></i></span>
+                            </div>
+                            <div className={`${Styles.flash_carousel_img}`}>
+                                <img src="./images/flash-img3.png" alt="" />
+                            </div>
+                            <div className={`${Styles.flash_carousel_caption}`}>
+                                <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
+                                <div className={`${Styles.flash_price}`}>
+                                    <p className={`${Styles.category_title} m-1 font-weight-bold`}>Poland Spring</p>
+                                    <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
+                                    <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
+                                </div>
+                            </div>
+                        </div>
+                      </Link>
+                      <Link href="/product">
+                        <div className={`${Styles.flash_carousel}`}>
+                            <div className={`${Styles.flash_cart_wrap}`}>
+                                <span><i className="bi bi-heart"></i></span>
+                                <span><i className="bi bi-cart3"></i></span>
+                            </div>
+                            <div className={`${Styles.flash_carousel_img}`}>
+                                <img src="./images/hero-slider1.png" alt="" />
+                            </div>
+                            <div className={`${Styles.flash_carousel_caption}`}>
+                                <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
+                                <div className={`${Styles.flash_price}`}>
+                                    <p className={`${Styles.category_title} m-1 font-weight-bold`}>Nutella</p>
+                                    <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
+                                    <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
+                                </div>
+                            </div>
+                        </div>
+                      </Link>
+                      <Link href="/product">
+                        <div className={`${Styles.flash_carousel}`}>
+                            <div className={`${Styles.flash_cart_wrap}`}>
+                                <span><i className="bi bi-heart"></i></span>
+                                <span><i className="bi bi-cart3"></i></span>
+                            </div>
+                            <div className={`${Styles.flash_carousel_img}`}>
+                                <img src="./images/flash-img1.png" alt="" />
+                            </div>
+                            <div className={`${Styles.flash_carousel_caption}`}>
+                                <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
+                                <div className={`${Styles.flash_price}`}>
+                                    <p className={`${Styles.category_title} m-1 font-weight-bold`}>Nutella</p>
+                                    <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
+                                    <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
+                                </div>
+                            </div>
+                        </div>
+                      </Link>
+                      <Link href="/product">
+                        <div className={`${Styles.flash_carousel}`}>
+                            <div className={`${Styles.flash_cart_wrap}`}>
+                                <span><i className="bi bi-heart"></i></span>
+                                <span><i className="bi bi-cart3"></i></span>
+                            </div>
+                            <div className={`${Styles.flash_carousel_img}`}>
+                                <img src="./images/flash-img2.png" alt="" />
+                            </div>
+                            <div className={`${Styles.flash_carousel_caption}`}>
+                                <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
+                                <div className={`${Styles.flash_price}`}>
+                                    <p className={`${Styles.category_title} m-1 font-weight-bold`}>Golden Morn</p>
+                                    <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
+                                    <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
+                                </div>
+                            </div>
+                        </div>
+                      </Link>
+                      <Link href="/product">
+                        <div className={`${Styles.flash_carousel}`}>
+                            <div className={`${Styles.flash_cart_wrap}`}>
+                                <span><i className="bi bi-heart"></i></span>
+                                <span><i className="bi bi-cart3"></i></span>
+                            </div>
+                            <div className={`${Styles.flash_carousel_img}`}>
+                                <img src="./images/flash-img3.png" alt="" />
+                            </div>
+                            <div className={`${Styles.flash_carousel_caption}`}>
+                                <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
+                                <div className={`${Styles.flash_price}`}>
+                                    <p className={`${Styles.category_title} m-1 font-weight-bold`}>Nutella</p>
+                                    <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
+                                    <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
+                                </div>
+                            </div>
+                        </div>
+                      </Link>
+                      <Link href="/product">
+                        <div className={`${Styles.flash_carousel}`}>
+                            <div className={`${Styles.flash_cart_wrap}`}>
+                                <span><i className="bi bi-heart"></i></span>
+                                <span><i className="bi bi-cart3"></i></span>
+                            </div>
+                            <div className={`${Styles.flash_carousel_img}`}>
+                                <img src="./images/hero-slider1.png" alt="" />
+                            </div>
+                            <div className={`${Styles.flash_carousel_caption}`}>
+                                <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
+                                <div className={`${Styles.flash_price}`}>
+                                    <p className={`${Styles.category_title} m-1 font-weight-bold`}>Nutella</p>
+                                    <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
+                                    <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
+                                </div>
+                            </div>
+                        </div>
+                  </Link>
                   </div>
               </div>
 
               <div className={`${Styles.flash_carousel_body} py-3 mt-3 d-none d-md-block`}>
                   <div className={`${Styles.flash_carousel_row}`}>
-                      <div className={`${Styles.flash_carousel}`}>
-                          <div className={`${Styles.flash_cart_wrap}`}>
-                              <span><i className="bi bi-heart"></i></span>
-                              <span><i className="bi bi-cart3"></i></span>
-                          </div>
-                          <div className={`${Styles.flash_carousel_img}`}>
-                              <img src="./images/flash-img1.png" alt="" />
-                          </div>
-                          <div className={`${Styles.flash_carousel_caption}`}>
-                              <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
-                              <div className={`${Styles.flash_price}`}>
-                                  <p className={`${Styles.category_title} m-1 font-weight-bold`}>Nutella</p>
-                                  <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
-                                  <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div className={`${Styles.flash_carousel}`}>
-                          <div className={`${Styles.flash_cart_wrap}`}>
-                              <span><i className="bi bi-heart"></i></span>
-                              <span><i className="bi bi-cart3"></i></span>
-                          </div>
-                          <div className={`${Styles.flash_carousel_img}`}>
-                              <img src="./images/flash-img2.png" alt="" />
-                          </div>
-                          <div className={`${Styles.flash_carousel_caption}`}>
-                              <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
-                              <div className={`${Styles.flash_price}`}>
-                                  <p className={`${Styles.category_title} m-1 font-weight-bold`}>Golden Morn</p>
-                                  <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
-                                  <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div className={`${Styles.flash_carousel}`}>
-                          <div className={`${Styles.flash_cart_wrap}`}>
-                              <span><i className="bi bi-heart"></i></span>
-                              <span><i className="bi bi-cart3"></i></span>
-                          </div>
-                          <div className={`${Styles.flash_carousel_img}`}>
-                              <img src="./images/flash-img3.png" alt="" />
-                          </div>
-                          <div className={`${Styles.flash_carousel_caption}`}>
-                              <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
-                              <div className={`${Styles.flash_price}`}>
-                                  <p className={`${Styles.category_title} m-1 font-weight-bold`}>Poland Spring</p>
-                                  <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
-                                  <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div className={`${Styles.flash_carousel}`}>
-                          <div className={`${Styles.flash_cart_wrap}`}>
-                              <span><i className="bi bi-heart"></i></span>
-                              <span><i className="bi bi-cart3"></i></span>
-                          </div>
-                          <div className={`${Styles.flash_carousel_img}`}>
-                              <img src="./images/hero-slider1.png" alt="" />
-                          </div>
-                          <div className={`${Styles.flash_carousel_caption}`}>
-                              <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
-                              <div className={`${Styles.flash_price}`}>
-                                  <p className={`${Styles.category_title} m-1 font-weight-bold`}>Nutella</p>
-                                  <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
-                                  <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div className={`${Styles.flash_carousel}`}>
-                          <div className={`${Styles.flash_cart_wrap}`}>
-                              <span><i className="bi bi-heart"></i></span>
-                              <span><i className="bi bi-cart3"></i></span>
-                          </div>
-                          <div className={`${Styles.flash_carousel_img}`}>
-                              <img src="./images/flash-img1.png" alt="" />
-                          </div>
-                          <div className={`${Styles.flash_carousel_caption}`}>
-                              <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
-                              <div className={`${Styles.flash_price}`}>
-                                  <p className={`${Styles.category_title} m-1 font-weight-bold`}>Nutella</p>
-                                  <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
-                                  <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div className={`${Styles.flash_carousel}`}>
-                          <div className={`${Styles.flash_cart_wrap}`}>
-                              <span><i className="bi bi-heart"></i></span>
-                              <span><i className="bi bi-cart3"></i></span>
-                          </div>
-                          <div className={`${Styles.flash_carousel_img}`}>
-                              <img src="./images/flash-img2.png" alt="" />
-                          </div>
-                          <div className={`${Styles.flash_carousel_caption}`}>
-                              <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
-                              <div className={`${Styles.flash_price}`}>
-                                  <p className={`${Styles.category_title} m-1 font-weight-bold`}>Golden Morn</p>
-                                  <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
-                                  <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div className={`${Styles.flash_carousel}`}>
-                          <div className={`${Styles.flash_cart_wrap}`}>
-                              <span><i className="bi bi-heart"></i></span>
-                              <span><i className="bi bi-cart3"></i></span>
-                          </div>
-                          <div className={`${Styles.flash_carousel_img}`}>
-                              <img src="./images/flash-img3.png" alt="" />
-                          </div>
-                          <div className={`${Styles.flash_carousel_caption}`}>
-                              <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
-                              <div className={`${Styles.flash_price}`}>
-                                  <p className={`${Styles.category_title} m-1 font-weight-bold`}>Nutella</p>
-                                  <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
-                                  <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div className={`${Styles.flash_carousel}`}>
-                          <div className={`${Styles.flash_cart_wrap}`}>
-                              <span><i className="bi bi-heart"></i></span>
-                              <span><i className="bi bi-cart3"></i></span>
-                          </div>
-                          <div className={`${Styles.flash_carousel_img}`}>
-                              <img src="./images/hero-slider1.png" alt="" />
-                          </div>
-                          <div className={`${Styles.flash_carousel_caption}`}>
-                              <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
-                              <div className={`${Styles.flash_price}`}>
-                                  <p className={`${Styles.category_title} m-1 font-weight-bold`}>Nutella</p>
-                                  <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
-                                  <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
-                              </div>
-                          </div>
-                      </div>
+                      <Link href="/product">
+                        <div className={`${Styles.flash_carousel}`}>
+                            <div className={`${Styles.flash_cart_wrap}`}>
+                                <span><i className="bi bi-heart"></i></span>
+                                <span><i className="bi bi-cart3"></i></span>
+                            </div>
+                            <div className={`${Styles.flash_carousel_img}`}>
+                                <img src="./images/flash-img1.png" alt="" />
+                            </div>
+                            <div className={`${Styles.flash_carousel_caption}`}>
+                                <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
+                                <div className={`${Styles.flash_price}`}>
+                                    <p className={`${Styles.category_title} m-1 font-weight-bold`}>Nutella</p>
+                                    <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
+                                    <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
+                                </div>
+                            </div>
+                        </div>
+                      </Link>
+                      <Link href="/product">
+                        <div className={`${Styles.flash_carousel}`}>
+                            <div className={`${Styles.flash_cart_wrap}`}>
+                                <span><i className="bi bi-heart"></i></span>
+                                <span><i className="bi bi-cart3"></i></span>
+                            </div>
+                            <div className={`${Styles.flash_carousel_img}`}>
+                                <img src="./images/flash-img2.png" alt="" />
+                            </div>
+                            <div className={`${Styles.flash_carousel_caption}`}>
+                                <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
+                                <div className={`${Styles.flash_price}`}>
+                                    <p className={`${Styles.category_title} m-1 font-weight-bold`}>Golden Morn</p>
+                                    <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
+                                    <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
+                                </div>
+                            </div>
+                        </div>
+                      </Link>
+                      <Link href="/product">
+                        <div className={`${Styles.flash_carousel}`}>
+                            <div className={`${Styles.flash_cart_wrap}`}>
+                                <span><i className="bi bi-heart"></i></span>
+                                <span><i className="bi bi-cart3"></i></span>
+                            </div>
+                            <div className={`${Styles.flash_carousel_img}`}>
+                                <img src="./images/flash-img3.png" alt="" />
+                            </div>
+                            <div className={`${Styles.flash_carousel_caption}`}>
+                                <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
+                                <div className={`${Styles.flash_price}`}>
+                                    <p className={`${Styles.category_title} m-1 font-weight-bold`}>Poland Spring</p>
+                                    <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
+                                    <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
+                                </div>
+                            </div>
+                        </div>
+                      </Link>
+                      <Link href="/product">
+                        <div className={`${Styles.flash_carousel}`}>
+                            <div className={`${Styles.flash_cart_wrap}`}>
+                                <span><i className="bi bi-heart"></i></span>
+                                <span><i className="bi bi-cart3"></i></span>
+                            </div>
+                            <div className={`${Styles.flash_carousel_img}`}>
+                                <img src="./images/hero-slider1.png" alt="" />
+                            </div>
+                            <div className={`${Styles.flash_carousel_caption}`}>
+                                <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
+                                <div className={`${Styles.flash_price}`}>
+                                    <p className={`${Styles.category_title} m-1 font-weight-bold`}>Nutella</p>
+                                    <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
+                                    <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
+                                </div>
+                            </div>
+                        </div>
+                      </Link>
+                      <Link href="/product">
+                        <div className={`${Styles.flash_carousel}`}>
+                            <div className={`${Styles.flash_cart_wrap}`}>
+                                <span><i className="bi bi-heart"></i></span>
+                                <span><i className="bi bi-cart3"></i></span>
+                            </div>
+                            <div className={`${Styles.flash_carousel_img}`}>
+                                <img src="./images/flash-img1.png" alt="" />
+                            </div>
+                            <div className={`${Styles.flash_carousel_caption}`}>
+                                <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
+                                <div className={`${Styles.flash_price}`}>
+                                    <p className={`${Styles.category_title} m-1 font-weight-bold`}>Nutella</p>
+                                    <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
+                                    <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
+                                </div>
+                            </div>
+                        </div>
+                      </Link>
+                      <Link href="/product">
+                        <div className={`${Styles.flash_carousel}`}>
+                            <div className={`${Styles.flash_cart_wrap}`}>
+                                <span><i className="bi bi-heart"></i></span>
+                                <span><i className="bi bi-cart3"></i></span>
+                            </div>
+                            <div className={`${Styles.flash_carousel_img}`}>
+                                <img src="./images/flash-img2.png" alt="" />
+                            </div>
+                            <div className={`${Styles.flash_carousel_caption}`}>
+                                <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
+                                <div className={`${Styles.flash_price}`}>
+                                    <p className={`${Styles.category_title} m-1 font-weight-bold`}>Golden Morn</p>
+                                    <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
+                                    <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
+                                </div>
+                            </div>
+                        </div>
+                      </Link>
+                      <Link href="/product">
+                        <div className={`${Styles.flash_carousel}`}>
+                            <div className={`${Styles.flash_cart_wrap}`}>
+                                <span><i className="bi bi-heart"></i></span>
+                                <span><i className="bi bi-cart3"></i></span>
+                            </div>
+                            <div className={`${Styles.flash_carousel_img}`}>
+                                <img src="./images/flash-img3.png" alt="" />
+                            </div>
+                            <div className={`${Styles.flash_carousel_caption}`}>
+                                <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
+                                <div className={`${Styles.flash_price}`}>
+                                    <p className={`${Styles.category_title} m-1 font-weight-bold`}>Nutella</p>
+                                    <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
+                                    <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
+                                </div>
+                            </div>
+                        </div>
+                      </Link>
+                      <Link href="/product">
+                        <div className={`${Styles.flash_carousel}`}>
+                            <div className={`${Styles.flash_cart_wrap}`}>
+                                <span><i className="bi bi-heart"></i></span>
+                                <span><i className="bi bi-cart3"></i></span>
+                            </div>
+                            <div className={`${Styles.flash_carousel_img}`}>
+                                <img src="./images/hero-slider1.png" alt="" />
+                            </div>
+                            <div className={`${Styles.flash_carousel_caption}`}>
+                                <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
+                                <div className={`${Styles.flash_price}`}>
+                                    <p className={`${Styles.category_title} m-1 font-weight-bold`}>Nutella</p>
+                                    <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
+                                    <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
+                                </div>
+                            </div>
+                        </div>
+                  </Link>
                   </div>
               </div>
           </div>
@@ -844,148 +899,164 @@ export default function Home() {
                       <h3>Personal Care</h3>
                   </div>
                   <div className={`${Styles.flash_head3} d-none d-md-inline`}>
-                      <Link href="">View more</Link>
+                      <Link href="/product">View more</Link>
                   </div>
               </div>
 
               <div className={`${Styles.flash_carousel_body} py-3  mt-3`}>
                   <div className={`${Styles.flash_carousel_row}`}>
-                      <div className={`${Styles.flash_carousel}`}>
-                          <div className={`${Styles.flash_cart_wrap}`}>
-                              <span><i className="bi bi-heart"></i></span>
-                              <span><i className="bi bi-cart3"></i></span>
-                          </div>
-                          <div className={`${Styles.flash_carousel_img}`}>
-                              <img src="./images/flash-img1.png" alt="" />
-                          </div>
-                          <div className={`${Styles.flash_carousel_caption}`}>
-                              <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
-                              <div className={`${Styles.flash_price}`}>
-                                  <p className={`${Styles.category_title} m-1 font-weight-bold`}>Nutella</p>
-                                  <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
-                                  <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div className={`${Styles.flash_carousel}`}>
-                          <div className={`${Styles.flash_cart_wrap}`}>
-                              <span><i className="bi bi-heart"></i></span>
-                              <span><i className="bi bi-cart3"></i></span>
-                          </div>
-                          <div className={`${Styles.flash_carousel_img}`}>
-                              <img src="./images/flash-img2.png" alt="" />
-                          </div>
-                          <div className={`${Styles.flash_carousel_caption}`}>
-                              <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
-                              <div className={`${Styles.flash_price}`}>
-                                  <p className={`${Styles.category_title} m-1 font-weight-bold`}>Golden Morn</p>
-                                  <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
-                                  <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div className={`${Styles.flash_carousel}`}>
-                          <div className={`${Styles.flash_cart_wrap}`}>
-                              <span><i className="bi bi-heart"></i></span>
-                              <span><i className="bi bi-cart3"></i></span>
-                          </div>
-                          <div className={`${Styles.flash_carousel_img}`}>
-                              <img src="./images/flash-img3.png" alt="" />
-                          </div>
-                          <div className={`${Styles.flash_carousel_caption}`}>
-                              <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
-                              <div className={`${Styles.flash_price}`}>
-                                  <p className={`${Styles.category_title} m-1 font-weight-bold`}>Poland Spring</p>
-                                  <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
-                                  <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div className={`${Styles.flash_carousel}`}>
-                          <div className={`${Styles.flash_cart_wrap}`}>
-                              <span><i className="bi bi-heart"></i></span>
-                              <span><i className="bi bi-cart3"></i></span>
-                          </div>
-                          <div className={`${Styles.flash_carousel_img}`}>
-                              <img src="./images/hero-slider1.png" alt="" />
-                          </div>
-                          <div className={`${Styles.flash_carousel_caption}`}>
-                              <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
-                              <div className={`${Styles.flash_price}`}>
-                                  <p className={`${Styles.category_title} m-1 font-weight-bold`}>Nutella</p>
-                                  <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
-                                  <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div className={`${Styles.flash_carousel}`}>
-                          <div className={`${Styles.flash_cart_wrap}`}>
-                              <span><i className="bi bi-heart"></i></span>
-                              <span><i className="bi bi-cart3"></i></span>
-                          </div>
-                          <div className={`${Styles.flash_carousel_img}`}>
-                              <img src="./images/flash-img1.png" alt="" />
-                          </div>
-                          <div className={`${Styles.flash_carousel_caption}`}>
-                              <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
-                              <div className={`${Styles.flash_price}`}>
-                                  <p className={`${Styles.category_title} m-1 font-weight-bold`}>Nutella</p>
-                                  <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
-                                  <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div className={`${Styles.flash_carousel}`}>
-                          <div className={`${Styles.flash_cart_wrap}`}>
-                              <span><i className="bi bi-heart"></i></span>
-                              <span><i className="bi bi-cart3"></i></span>
-                          </div>
-                          <div className={`${Styles.flash_carousel_img}`}>
-                              <img src="./images/flash-img2.png" alt="" />
-                          </div>
-                          <div className={`${Styles.flash_carousel_caption}`}>
-                              <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
-                              <div className={`${Styles.flash_price}`}>
-                                  <p className={`${Styles.category_title} m-1 font-weight-bold`}>Golden Morn</p>
-                                  <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
-                                  <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div className={`${Styles.flash_carousel}`}>
-                          <div className={`${Styles.flash_cart_wrap}`}>
-                              <span><i className="bi bi-heart"></i></span>
-                              <span><i className="bi bi-cart3"></i></span>
-                          </div>
-                          <div className={`${Styles.flash_carousel_img}`}>
-                              <img src="./images/flash-img3.png" alt="" />
-                          </div>
-                          <div className={`${Styles.flash_carousel_caption}`}>
-                              <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
-                              <div className={`${Styles.flash_price}`}>
-                                  <p className={`${Styles.category_title} m-1 font-weight-bold`}>Nutella</p>
-                                  <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
-                                  <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div className={`${Styles.flash_carousel}`}>
-                          <div className={`${Styles.flash_cart_wrap}`}>
-                              <span><i className="bi bi-heart"></i></span>
-                              <span><i className="bi bi-cart3"></i></span>
-                          </div>
-                          <div className={`${Styles.flash_carousel_img}`}>
-                              <img src="./images/hero-slider1.png" alt="" />
-                          </div>
-                          <div className={`${Styles.flash_carousel_caption}`}>
-                              <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
-                              <div className={`${Styles.flash_price}`}>
-                                  <p className={`${Styles.category_title} m-1 font-weight-bold`}>Nutella</p>
-                                  <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
-                                  <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
-                              </div>
-                          </div>
-                      </div>
+                      <Link href="/product">
+                        <div className={`${Styles.flash_carousel}`}>
+                            <div className={`${Styles.flash_cart_wrap}`}>
+                                <span><i className="bi bi-heart"></i></span>
+                                <span><i className="bi bi-cart3"></i></span>
+                            </div>
+                            <div className={`${Styles.flash_carousel_img}`}>
+                                <img src="./images/flash-img1.png" alt="" />
+                            </div>
+                            <div className={`${Styles.flash_carousel_caption}`}>
+                                <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
+                                <div className={`${Styles.flash_price}`}>
+                                    <p className={`${Styles.category_title} m-1 font-weight-bold`}>Nutella</p>
+                                    <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
+                                    <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
+                                </div>
+                            </div>
+                        </div>
+                      </Link>
+                      <Link href="/product">
+                        <div className={`${Styles.flash_carousel}`}>
+                            <div className={`${Styles.flash_cart_wrap}`}>
+                                <span><i className="bi bi-heart"></i></span>
+                                <span><i className="bi bi-cart3"></i></span>
+                            </div>
+                            <div className={`${Styles.flash_carousel_img}`}>
+                                <img src="./images/flash-img2.png" alt="" />
+                            </div>
+                            <div className={`${Styles.flash_carousel_caption}`}>
+                                <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
+                                <div className={`${Styles.flash_price}`}>
+                                    <p className={`${Styles.category_title} m-1 font-weight-bold`}>Golden Morn</p>
+                                    <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
+                                    <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
+                                </div>
+                            </div>
+                        </div>
+                      </Link>
+                      <Link href="/product">
+                        <div className={`${Styles.flash_carousel}`}>
+                            <div className={`${Styles.flash_cart_wrap}`}>
+                                <span><i className="bi bi-heart"></i></span>
+                                <span><i className="bi bi-cart3"></i></span>
+                            </div>
+                            <div className={`${Styles.flash_carousel_img}`}>
+                                <img src="./images/flash-img3.png" alt="" />
+                            </div>
+                            <div className={`${Styles.flash_carousel_caption}`}>
+                                <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
+                                <div className={`${Styles.flash_price}`}>
+                                    <p className={`${Styles.category_title} m-1 font-weight-bold`}>Poland Spring</p>
+                                    <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
+                                    <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
+                                </div>
+                            </div>
+                        </div>
+                      </Link>
+                      <Link href="/product">
+                        <div className={`${Styles.flash_carousel}`}>
+                            <div className={`${Styles.flash_cart_wrap}`}>
+                                <span><i className="bi bi-heart"></i></span>
+                                <span><i className="bi bi-cart3"></i></span>
+                            </div>
+                            <div className={`${Styles.flash_carousel_img}`}>
+                                <img src="./images/hero-slider1.png" alt="" />
+                            </div>
+                            <div className={`${Styles.flash_carousel_caption}`}>
+                                <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
+                                <div className={`${Styles.flash_price}`}>
+                                    <p className={`${Styles.category_title} m-1 font-weight-bold`}>Nutella</p>
+                                    <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
+                                    <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
+                                </div>
+                            </div>
+                        </div>
+                      </Link>
+                      <Link href="/product">
+                        <div className={`${Styles.flash_carousel}`}>
+                            <div className={`${Styles.flash_cart_wrap}`}>
+                                <span><i className="bi bi-heart"></i></span>
+                                <span><i className="bi bi-cart3"></i></span>
+                            </div>
+                            <div className={`${Styles.flash_carousel_img}`}>
+                                <img src="./images/flash-img1.png" alt="" />
+                            </div>
+                            <div className={`${Styles.flash_carousel_caption}`}>
+                                <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
+                                <div className={`${Styles.flash_price}`}>
+                                    <p className={`${Styles.category_title} m-1 font-weight-bold`}>Nutella</p>
+                                    <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
+                                    <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
+                                </div>
+                            </div>
+                        </div>
+                      </Link>
+                      <Link href="/product">
+                        <div className={`${Styles.flash_carousel}`}>
+                            <div className={`${Styles.flash_cart_wrap}`}>
+                                <span><i className="bi bi-heart"></i></span>
+                                <span><i className="bi bi-cart3"></i></span>
+                            </div>
+                            <div className={`${Styles.flash_carousel_img}`}>
+                                <img src="./images/flash-img2.png" alt="" />
+                            </div>
+                            <div className={`${Styles.flash_carousel_caption}`}>
+                                <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
+                                <div className={`${Styles.flash_price}`}>
+                                    <p className={`${Styles.category_title} m-1 font-weight-bold`}>Golden Morn</p>
+                                    <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
+                                    <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
+                                </div>
+                            </div>
+                        </div>
+                      </Link>
+                      <Link href="/product">
+                        <div className={`${Styles.flash_carousel}`}>
+                            <div className={`${Styles.flash_cart_wrap}`}>
+                                <span><i className="bi bi-heart"></i></span>
+                                <span><i className="bi bi-cart3"></i></span>
+                            </div>
+                            <div className={`${Styles.flash_carousel_img}`}>
+                                <img src="./images/flash-img3.png" alt="" />
+                            </div>
+                            <div className={`${Styles.flash_carousel_caption}`}>
+                                <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
+                                <div className={`${Styles.flash_price}`}>
+                                    <p className={`${Styles.category_title} m-1 font-weight-bold`}>Nutella</p>
+                                    <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
+                                    <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
+                                </div>
+                            </div>
+                        </div>
+                      </Link>
+                      <Link href="/product">
+                        <div className={`${Styles.flash_carousel}`}>
+                            <div className={`${Styles.flash_cart_wrap}`}>
+                                <span><i className="bi bi-heart"></i></span>
+                                <span><i className="bi bi-cart3"></i></span>
+                            </div>
+                            <div className={`${Styles.flash_carousel_img}`}>
+                                <img src="./images/hero-slider1.png" alt="" />
+                            </div>
+                            <div className={`${Styles.flash_carousel_caption}`}>
+                                <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
+                                <div className={`${Styles.flash_price}`}>
+                                    <p className={`${Styles.category_title} m-1 font-weight-bold`}>Nutella</p>
+                                    <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
+                                    <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
+                                </div>
+                            </div>
+                        </div>
+                  </Link>
                   </div>
               </div>
           </div>
@@ -998,148 +1069,164 @@ export default function Home() {
                       <h3>Baby Product</h3>
                   </div>
                   <div className={`${Styles.flash_head3} d-none d-md-inline`}>
-                      <Link href="">View more</Link>
+                      <Link href="/product">View more</Link>
                   </div>
               </div>
 
               <div className={`${Styles.flash_carousel_body} py-3  mt-3`}>
                   <div className={`${Styles.flash_carousel_row}`}>
-                      <div className={`${Styles.flash_carousel}`}>
-                          <div className={`${Styles.flash_cart_wrap}`}>
-                              <span><i className="bi bi-heart"></i></span>
-                              <span><i className="bi bi-cart3"></i></span>
-                          </div>
-                          <div className={`${Styles.flash_carousel_img}`}>
-                              <img src="./images/flash-img1.png" alt="" />
-                          </div>
-                          <div className={`${Styles.flash_carousel_caption}`}>
-                              <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
-                              <div className={`${Styles.flash_price}`}>
-                                  <p className={`${Styles.category_title} m-1 font-weight-bold`}>Nutella</p>
-                                  <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
-                                  <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div className={`${Styles.flash_carousel}`}>
-                          <div className={`${Styles.flash_cart_wrap}`}>
-                              <span><i className="bi bi-heart"></i></span>
-                              <span><i className="bi bi-cart3"></i></span>
-                          </div>
-                          <div className={`${Styles.flash_carousel_img}`}>
-                              <img src="./images/flash-img2.png" alt="" />
-                          </div>
-                          <div className={`${Styles.flash_carousel_caption}`}>
-                              <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
-                              <div className={`${Styles.flash_price}`}>
-                                  <p className={`${Styles.category_title} m-1 font-weight-bold`}>Golden Morn</p>
-                                  <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
-                                  <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div className={`${Styles.flash_carousel}`}>
-                          <div className={`${Styles.flash_cart_wrap}`}>
-                              <span><i className="bi bi-heart"></i></span>
-                              <span><i className="bi bi-cart3"></i></span>
-                          </div>
-                          <div className={`${Styles.flash_carousel_img}`}>
-                              <img src="./images/flash-img3.png" alt="" />
-                          </div>
-                          <div className={`${Styles.flash_carousel_caption}`}>
-                              <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
-                              <div className={`${Styles.flash_price}`}>
-                                  <p className={`${Styles.category_title} m-1 font-weight-bold`}>Poland Spring</p>
-                                  <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
-                                  <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div className={`${Styles.flash_carousel}`}>
-                          <div className={`${Styles.flash_cart_wrap}`}>
-                              <span><i className="bi bi-heart"></i></span>
-                              <span><i className="bi bi-cart3"></i></span>
-                          </div>
-                          <div className={`${Styles.flash_carousel_img}`}>
-                              <img src="./images/hero-slider1.png" alt="" />
-                          </div>
-                          <div className={`${Styles.flash_carousel_caption}`}>
-                              <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
-                              <div className={`${Styles.flash_price}`}>
-                                  <p className={`${Styles.category_title} m-1 font-weight-bold`}>Nutella</p>
-                                  <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
-                                  <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div className={`${Styles.flash_carousel}`}>
-                          <div className={`${Styles.flash_cart_wrap}`}>
-                              <span><i className="bi bi-heart"></i></span>
-                              <span><i className="bi bi-cart3"></i></span>
-                          </div>
-                          <div className={`${Styles.flash_carousel_img}`}>
-                              <img src="./images/flash-img1.png" alt="" />
-                          </div>
-                          <div className={`${Styles.flash_carousel_caption}`}>
-                              <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
-                              <div className={`${Styles.flash_price}`}>
-                                  <p className={`${Styles.category_title} m-1 font-weight-bold`}>Nutella</p>
-                                  <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
-                                  <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div className={`${Styles.flash_carousel}`}>
-                          <div className={`${Styles.flash_cart_wrap}`}>
-                              <span><i className="bi bi-heart"></i></span>
-                              <span><i className="bi bi-cart3"></i></span>
-                          </div>
-                          <div className={`${Styles.flash_carousel_img}`}>
-                              <img src="./images/flash-img2.png" alt="" />
-                          </div>
-                          <div className={`${Styles.flash_carousel_caption}`}>
-                              <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
-                              <div className={`${Styles.flash_price}`}>
-                                  <p className={`${Styles.category_title} m-1 font-weight-bold`}>Golden Morn</p>
-                                  <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
-                                  <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div className={`${Styles.flash_carousel}`}>
-                          <div className={`${Styles.flash_cart_wrap}`}>
-                              <span><i className="bi bi-heart"></i></span>
-                              <span><i className="bi bi-cart3"></i></span>
-                          </div>
-                          <div className={`${Styles.flash_carousel_img}`}>
-                              <img src="./images/flash-img3.png" alt="" />
-                          </div>
-                          <div className={`${Styles.flash_carousel_caption}`}>
-                              <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
-                              <div className={`${Styles.flash_price}`}>
-                                  <p className={`${Styles.category_title} m-1 font-weight-bold`}>Nutella</p>
-                                  <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
-                                  <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div className={`${Styles.flash_carousel}`}>
-                          <div className={`${Styles.flash_cart_wrap}`}>
-                              <span><i className="bi bi-heart"></i></span>
-                              <span><i className="bi bi-cart3"></i></span>
-                          </div>
-                          <div className={`${Styles.flash_carousel_img}`}>
-                              <img src="./images/hero-slider1.png" alt="" />
-                          </div>
-                          <div className={`${Styles.flash_carousel_caption}`}>
-                              <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
-                              <div className={`${Styles.flash_price}`}>
-                                  <p className={`${Styles.category_title} m-1 font-weight-bold`}>Nutella</p>
-                                  <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
-                                  <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
-                              </div>
-                          </div>
-                      </div>
+                      <Link href="/product">
+                        <div className={`${Styles.flash_carousel}`}>
+                            <div className={`${Styles.flash_cart_wrap}`}>
+                                <span><i className="bi bi-heart"></i></span>
+                                <span><i className="bi bi-cart3"></i></span>
+                            </div>
+                            <div className={`${Styles.flash_carousel_img}`}>
+                                <img src="./images/flash-img1.png" alt="" />
+                            </div>
+                            <div className={`${Styles.flash_carousel_caption}`}>
+                                <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
+                                <div className={`${Styles.flash_price}`}>
+                                    <p className={`${Styles.category_title} m-1 font-weight-bold`}>Nutella</p>
+                                    <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
+                                    <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
+                                </div>
+                            </div>
+                        </div>
+                      </Link>
+                      <Link href="/product">
+                        <div className={`${Styles.flash_carousel}`}>
+                            <div className={`${Styles.flash_cart_wrap}`}>
+                                <span><i className="bi bi-heart"></i></span>
+                                <span><i className="bi bi-cart3"></i></span>
+                            </div>
+                            <div className={`${Styles.flash_carousel_img}`}>
+                                <img src="./images/flash-img2.png" alt="" />
+                            </div>
+                            <div className={`${Styles.flash_carousel_caption}`}>
+                                <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
+                                <div className={`${Styles.flash_price}`}>
+                                    <p className={`${Styles.category_title} m-1 font-weight-bold`}>Golden Morn</p>
+                                    <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
+                                    <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
+                                </div>
+                            </div>
+                        </div>
+                      </Link>
+                      <Link href="/product">
+                        <div className={`${Styles.flash_carousel}`}>
+                            <div className={`${Styles.flash_cart_wrap}`}>
+                                <span><i className="bi bi-heart"></i></span>
+                                <span><i className="bi bi-cart3"></i></span>
+                            </div>
+                            <div className={`${Styles.flash_carousel_img}`}>
+                                <img src="./images/flash-img3.png" alt="" />
+                            </div>
+                            <div className={`${Styles.flash_carousel_caption}`}>
+                                <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
+                                <div className={`${Styles.flash_price}`}>
+                                    <p className={`${Styles.category_title} m-1 font-weight-bold`}>Poland Spring</p>
+                                    <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
+                                    <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
+                                </div>
+                            </div>
+                        </div>
+                      </Link>
+                      <Link href="/product">
+                        <div className={`${Styles.flash_carousel}`}>
+                            <div className={`${Styles.flash_cart_wrap}`}>
+                                <span><i className="bi bi-heart"></i></span>
+                                <span><i className="bi bi-cart3"></i></span>
+                            </div>
+                            <div className={`${Styles.flash_carousel_img}`}>
+                                <img src="./images/hero-slider1.png" alt="" />
+                            </div>
+                            <div className={`${Styles.flash_carousel_caption}`}>
+                                <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
+                                <div className={`${Styles.flash_price}`}>
+                                    <p className={`${Styles.category_title} m-1 font-weight-bold`}>Nutella</p>
+                                    <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
+                                    <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
+                                </div>
+                            </div>
+                        </div>
+                      </Link>
+                      <Link href="/product">
+                        <div className={`${Styles.flash_carousel}`}>
+                            <div className={`${Styles.flash_cart_wrap}`}>
+                                <span><i className="bi bi-heart"></i></span>
+                                <span><i className="bi bi-cart3"></i></span>
+                            </div>
+                            <div className={`${Styles.flash_carousel_img}`}>
+                                <img src="./images/flash-img1.png" alt="" />
+                            </div>
+                            <div className={`${Styles.flash_carousel_caption}`}>
+                                <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
+                                <div className={`${Styles.flash_price}`}>
+                                    <p className={`${Styles.category_title} m-1 font-weight-bold`}>Nutella</p>
+                                    <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
+                                    <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
+                                </div>
+                            </div>
+                        </div>
+                      </Link>
+                      <Link href="/product">
+                        <div className={`${Styles.flash_carousel}`}>
+                            <div className={`${Styles.flash_cart_wrap}`}>
+                                <span><i className="bi bi-heart"></i></span>
+                                <span><i className="bi bi-cart3"></i></span>
+                            </div>
+                            <div className={`${Styles.flash_carousel_img}`}>
+                                <img src="./images/flash-img2.png" alt="" />
+                            </div>
+                            <div className={`${Styles.flash_carousel_caption}`}>
+                                <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
+                                <div className={`${Styles.flash_price}`}>
+                                    <p className={`${Styles.category_title} m-1 font-weight-bold`}>Golden Morn</p>
+                                    <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
+                                    <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
+                                </div>
+                            </div>
+                        </div>
+                      </Link>
+                      <Link href="/product">
+                        <div className={`${Styles.flash_carousel}`}>
+                            <div className={`${Styles.flash_cart_wrap}`}>
+                                <span><i className="bi bi-heart"></i></span>
+                                <span><i className="bi bi-cart3"></i></span>
+                            </div>
+                            <div className={`${Styles.flash_carousel_img}`}>
+                                <img src="./images/flash-img3.png" alt="" />
+                            </div>
+                            <div className={`${Styles.flash_carousel_caption}`}>
+                                <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
+                                <div className={`${Styles.flash_price}`}>
+                                    <p className={`${Styles.category_title} m-1 font-weight-bold`}>Nutella</p>
+                                    <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
+                                    <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
+                                </div>
+                            </div>
+                        </div>
+                      </Link>
+                      <Link href="/product">
+                        <div className={`${Styles.flash_carousel}`}>
+                            <div className={`${Styles.flash_cart_wrap}`}>
+                                <span><i className="bi bi-heart"></i></span>
+                                <span><i className="bi bi-cart3"></i></span>
+                            </div>
+                            <div className={`${Styles.flash_carousel_img}`}>
+                                <img src="./images/hero-slider1.png" alt="" />
+                            </div>
+                            <div className={`${Styles.flash_carousel_caption}`}>
+                                <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
+                                <div className={`${Styles.flash_price}`}>
+                                    <p className={`${Styles.category_title} m-1 font-weight-bold`}>Nutella</p>
+                                    <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
+                                    <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
+                                </div>
+                            </div>
+                        </div>
+                  </Link>
                   </div>
               </div>
           </div>
@@ -1152,148 +1239,164 @@ export default function Home() {
                       <h3>Fashion</h3>
                   </div>
                   <div className={`${Styles.flash_head3} d-none d-md-inline`}>
-                      <Link href="">View more</Link>
+                      <Link href="/product">View more</Link>
                   </div>
               </div>
 
               <div className={`${Styles.flash_carousel_body} py-3  mt-3`}>
                   <div className={`${Styles.flash_carousel_row}`}>
-                      <div className={`${Styles.flash_carousel}`}>
-                          <div className={`${Styles.flash_cart_wrap}`}>
-                              <span><i className="bi bi-heart"></i></span>
-                              <span><i className="bi bi-cart3"></i></span>
-                          </div>
-                          <div className={`${Styles.flash_carousel_img}`}>
-                              <img src="./images/flash-img1.png" alt="" />
-                          </div>
-                          <div className={`${Styles.flash_carousel_caption}`}>
-                              <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
-                              <div className={`${Styles.flash_price}`}>
-                                  <p className={`${Styles.category_title} m-1 font-weight-bold`}>Nutella</p>
-                                  <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
-                                  <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div className={`${Styles.flash_carousel}`}>
-                          <div className={`${Styles.flash_cart_wrap}`}>
-                              <span><i className="bi bi-heart"></i></span>
-                              <span><i className="bi bi-cart3"></i></span>
-                          </div>
-                          <div className={`${Styles.flash_carousel_img}`}>
-                              <img src="./images/flash-img2.png" alt="" />
-                          </div>
-                          <div className={`${Styles.flash_carousel_caption}`}>
-                              <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
-                              <div className={`${Styles.flash_price}`}>
-                                  <p className={`${Styles.category_title} m-1 font-weight-bold`}>Golden Morn</p>
-                                  <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
-                                  <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div className={`${Styles.flash_carousel}`}>
-                          <div className={`${Styles.flash_cart_wrap}`}>
-                              <span><i className="bi bi-heart"></i></span>
-                              <span><i className="bi bi-cart3"></i></span>
-                          </div>
-                          <div className={`${Styles.flash_carousel_img}`}>
-                              <img src="./images/flash-img3.png" alt="" />
-                          </div>
-                          <div className={`${Styles.flash_carousel_caption}`}>
-                              <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
-                              <div className={`${Styles.flash_price}`}>
-                                  <p className={`${Styles.category_title} m-1 font-weight-bold`}>Poland Spring</p>
-                                  <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
-                                  <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div className={`${Styles.flash_carousel}`}>
-                          <div className={`${Styles.flash_cart_wrap}`}>
-                              <span><i className="bi bi-heart"></i></span>
-                              <span><i className="bi bi-cart3"></i></span>
-                          </div>
-                          <div className={`${Styles.flash_carousel_img}`}>
-                              <img src="./images/hero-slider1.png" alt="" />
-                          </div>
-                          <div className={`${Styles.flash_carousel_caption}`}>
-                              <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
-                              <div className={`${Styles.flash_price}`}>
-                                  <p className={`${Styles.category_title} m-1 font-weight-bold`}>Nutella</p>
-                                  <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
-                                  <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div className={`${Styles.flash_carousel}`}>
-                          <div className={`${Styles.flash_cart_wrap}`}>
-                              <span><i className="bi bi-heart"></i></span>
-                              <span><i className="bi bi-cart3"></i></span>
-                          </div>
-                          <div className={`${Styles.flash_carousel_img}`}>
-                              <img src="./images/flash-img1.png" alt="" />
-                          </div>
-                          <div className={`${Styles.flash_carousel_caption}`}>
-                              <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
-                              <div className={`${Styles.flash_price}`}>
-                                  <p className={`${Styles.category_title} m-1 font-weight-bold`}>Nutella</p>
-                                  <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
-                                  <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div className={`${Styles.flash_carousel}`}>
-                          <div className={`${Styles.flash_cart_wrap}`}>
-                              <span><i className="bi bi-heart"></i></span>
-                              <span><i className="bi bi-cart3"></i></span>
-                          </div>
-                          <div className={`${Styles.flash_carousel_img}`}>
-                              <img src="./images/flash-img2.png" alt="" />
-                          </div>
-                          <div className={`${Styles.flash_carousel_caption}`}>
-                              <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
-                              <div className={`${Styles.flash_price}`}>
-                                  <p className={`${Styles.category_title} m-1 font-weight-bold`}>Golden Morn</p>
-                                  <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
-                                  <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div className={`${Styles.flash_carousel}`}>
-                          <div className={`${Styles.flash_cart_wrap}`}>
-                              <span><i className="bi bi-heart"></i></span>
-                              <span><i className="bi bi-cart3"></i></span>
-                          </div>
-                          <div className={`${Styles.flash_carousel_img}`}>
-                              <img src="./images/flash-img3.png" alt="" />
-                          </div>
-                          <div className={`${Styles.flash_carousel_caption}`}>
-                              <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
-                              <div className={`${Styles.flash_price}`}>
-                                  <p className={`${Styles.category_title} m-1 font-weight-bold`}>Nutella</p>
-                                  <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
-                                  <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div className={`${Styles.flash_carousel}`}>
-                          <div className={`${Styles.flash_cart_wrap}`}>
-                              <span><i className="bi bi-heart"></i></span>
-                              <span><i className="bi bi-cart3"></i></span>
-                          </div>
-                          <div className={`${Styles.flash_carousel_img}`}>
-                              <img src="./images/hero-slider1.png" alt="" />
-                          </div>
-                          <div className={`${Styles.flash_carousel_caption}`}>
-                              <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
-                              <div className={`${Styles.flash_price}`}>
-                                  <p className={`${Styles.category_title} m-1 font-weight-bold`}>Nutella</p>
-                                  <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
-                                  <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
-                              </div>
-                          </div>
-                      </div>
+                      <Link href="/product">
+                        <div className={`${Styles.flash_carousel}`}>
+                            <div className={`${Styles.flash_cart_wrap}`}>
+                                <span><i className="bi bi-heart"></i></span>
+                                <span><i className="bi bi-cart3"></i></span>
+                            </div>
+                            <div className={`${Styles.flash_carousel_img}`}>
+                                <img src="./images/flash-img1.png" alt="" />
+                            </div>
+                            <div className={`${Styles.flash_carousel_caption}`}>
+                                <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
+                                <div className={`${Styles.flash_price}`}>
+                                    <p className={`${Styles.category_title} m-1 font-weight-bold`}>Nutella</p>
+                                    <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
+                                    <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
+                                </div>
+                            </div>
+                        </div>
+                      </Link>
+                      <Link href="/product">
+                        <div className={`${Styles.flash_carousel}`}>
+                            <div className={`${Styles.flash_cart_wrap}`}>
+                                <span><i className="bi bi-heart"></i></span>
+                                <span><i className="bi bi-cart3"></i></span>
+                            </div>
+                            <div className={`${Styles.flash_carousel_img}`}>
+                                <img src="./images/flash-img2.png" alt="" />
+                            </div>
+                            <div className={`${Styles.flash_carousel_caption}`}>
+                                <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
+                                <div className={`${Styles.flash_price}`}>
+                                    <p className={`${Styles.category_title} m-1 font-weight-bold`}>Golden Morn</p>
+                                    <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
+                                    <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
+                                </div>
+                            </div>
+                        </div>
+                      </Link>
+                      <Link href="/product">
+                        <div className={`${Styles.flash_carousel}`}>
+                            <div className={`${Styles.flash_cart_wrap}`}>
+                                <span><i className="bi bi-heart"></i></span>
+                                <span><i className="bi bi-cart3"></i></span>
+                            </div>
+                            <div className={`${Styles.flash_carousel_img}`}>
+                                <img src="./images/flash-img3.png" alt="" />
+                            </div>
+                            <div className={`${Styles.flash_carousel_caption}`}>
+                                <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
+                                <div className={`${Styles.flash_price}`}>
+                                    <p className={`${Styles.category_title} m-1 font-weight-bold`}>Poland Spring</p>
+                                    <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
+                                    <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
+                                </div>
+                            </div>
+                        </div>
+                      </Link>
+                      <Link href="/product">
+                        <div className={`${Styles.flash_carousel}`}>
+                            <div className={`${Styles.flash_cart_wrap}`}>
+                                <span><i className="bi bi-heart"></i></span>
+                                <span><i className="bi bi-cart3"></i></span>
+                            </div>
+                            <div className={`${Styles.flash_carousel_img}`}>
+                                <img src="./images/hero-slider1.png" alt="" />
+                            </div>
+                            <div className={`${Styles.flash_carousel_caption}`}>
+                                <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
+                                <div className={`${Styles.flash_price}`}>
+                                    <p className={`${Styles.category_title} m-1 font-weight-bold`}>Nutella</p>
+                                    <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
+                                    <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
+                                </div>
+                            </div>
+                        </div>
+                      </Link>
+                      <Link href="/product">
+                        <div className={`${Styles.flash_carousel}`}>
+                            <div className={`${Styles.flash_cart_wrap}`}>
+                                <span><i className="bi bi-heart"></i></span>
+                                <span><i className="bi bi-cart3"></i></span>
+                            </div>
+                            <div className={`${Styles.flash_carousel_img}`}>
+                                <img src="./images/flash-img1.png" alt="" />
+                            </div>
+                            <div className={`${Styles.flash_carousel_caption}`}>
+                                <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
+                                <div className={`${Styles.flash_price}`}>
+                                    <p className={`${Styles.category_title} m-1 font-weight-bold`}>Nutella</p>
+                                    <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
+                                    <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
+                                </div>
+                            </div>
+                        </div>
+                      </Link>
+                      <Link href="/product">
+                        <div className={`${Styles.flash_carousel}`}>
+                            <div className={`${Styles.flash_cart_wrap}`}>
+                                <span><i className="bi bi-heart"></i></span>
+                                <span><i className="bi bi-cart3"></i></span>
+                            </div>
+                            <div className={`${Styles.flash_carousel_img}`}>
+                                <img src="./images/flash-img2.png" alt="" />
+                            </div>
+                            <div className={`${Styles.flash_carousel_caption}`}>
+                                <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
+                                <div className={`${Styles.flash_price}`}>
+                                    <p className={`${Styles.category_title} m-1 font-weight-bold`}>Golden Morn</p>
+                                    <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
+                                    <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
+                                </div>
+                            </div>
+                        </div>
+                      </Link>
+                      <Link href="/product">
+                        <div className={`${Styles.flash_carousel}`}>
+                            <div className={`${Styles.flash_cart_wrap}`}>
+                                <span><i className="bi bi-heart"></i></span>
+                                <span><i className="bi bi-cart3"></i></span>
+                            </div>
+                            <div className={`${Styles.flash_carousel_img}`}>
+                                <img src="./images/flash-img3.png" alt="" />
+                            </div>
+                            <div className={`${Styles.flash_carousel_caption}`}>
+                                <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
+                                <div className={`${Styles.flash_price}`}>
+                                    <p className={`${Styles.category_title} m-1 font-weight-bold`}>Nutella</p>
+                                    <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
+                                    <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
+                                </div>
+                            </div>
+                        </div>
+                      </Link>
+                      <Link href="/product">
+                        <div className={`${Styles.flash_carousel}`}>
+                            <div className={`${Styles.flash_cart_wrap}`}>
+                                <span><i className="bi bi-heart"></i></span>
+                                <span><i className="bi bi-cart3"></i></span>
+                            </div>
+                            <div className={`${Styles.flash_carousel_img}`}>
+                                <img src="./images/hero-slider1.png" alt="" />
+                            </div>
+                            <div className={`${Styles.flash_carousel_caption}`}>
+                                <p className={`${Styles.category_name} m-0 mt-2 font-weight-bold `}>Category Name</p>
+                                <div className={`${Styles.flash_price}`}>
+                                    <p className={`${Styles.category_title} m-1 font-weight-bold`}>Nutella</p>
+                                    <p className={`${Styles.category_new_price} m-1 font-weight-bold `}>₦400</p>
+                                    <p className={`${Styles.category_prev_price} m-1`}>₦450</p>
+                                </div>
+                            </div>
+                        </div>
+                  </Link>
                   </div>
               </div>
           </div>
@@ -1306,200 +1409,200 @@ export default function Home() {
                   <div className="col-md-6 my-2 px-3">
                       <div className="row">
                           <div className="col-4 px-2">
-                              <a href="">
+                              <Link href="/brands">
                                 <div className={`${Styles.store_product} ${Styles.good_one}`}>
                                   <img className="img-fluid img-responsive" src="./images/unil_1.png" alt="" />
                                 </div>
-                              </a>
+                              </Link>
                           </div>
                           <div className="col-4 px-2">
-                              <a href="">
+                              <Link href="/brands">
                                 <div className={`${Styles.store_product} ${Styles.good_two}`}>
                                   <img className="img-fluid img-responsive" src="./images/unil_2.png" alt="" />
                                 </div>
-                              </a>
+                              </Link>
                           </div>
                           <div className="col-4 px-2">
-                              <a href="">
+                              <Link href="/brands">
                                 <div className={`${Styles.store_product} ${Styles.good_three}`}>
                                   <img className="img-fluid img-responsive" src="./images/unil_3.png" alt="" />
                                 </div>
-                              </a>
+                              </Link>
                           </div>
                       </div>
                   </div>
                   <div className="col-md-6 my-2 px-3">
                       <div className="row">
                           <div className="col-4 px-2">
-                              <a href="">
+                              <Link href="/brands">
                                 <div className={`${Styles.store_product} ${Styles.good_one}`}>
                                   <img className="img-fluid img-responsive" src="./images/unil_1.png" alt="" />
                                 </div>
-                              </a>
+                              </Link>
                           </div>
                           <div className="col-4 px-2">
-                              <a href="">
+                              <Link href="/brands">
                                 <div className={`${Styles.store_product} ${Styles.good_two}`}>
                                   <img className="img-fluid img-responsive" src="./images/unil_2.png" alt="" />
                                 </div>
-                              </a>
+                              </Link>
                           </div>
                           <div className="col-4 px-2">
-                              <a href="">
+                              <Link href="/brands">
                                 <div className={`${Styles.store_product} ${Styles.good_three}`}>
                                   <img className="img-fluid img-responsive" src="./images/unil_3.png" alt="" />
                                 </div>
-                              </a>
+                              </Link>
                           </div>
                       </div>
                   </div>
                   <div className="col-md-6 my-2 px-3">
                       <div className="row">
                           <div className="col-4 px-2">
-                              <a href="">
+                              <Link href="/brands">
                                 <div className={`${Styles.store_product} ${Styles.good_one}`}>
                                   <img className="img-fluid img-responsive" src="./images/unil_1.png" alt="" />
                                 </div>
-                              </a>
+                              </Link>
                           </div>
                           <div className="col-4 px-2">
-                              <a href="">
+                              <Link href="/brands">
                                 <div className={`${Styles.store_product} ${Styles.good_two}`}>
                                   <img className="img-fluid img-responsive" src="./images/unil_2.png" alt="" />
                                 </div>
-                              </a>
+                              </Link>
                           </div>
                           <div className="col-4 px-2">
-                              <a href="">
+                              <Link href="/brands">
                                 <div className={`${Styles.store_product} ${Styles.good_three}`}>
                                   <img className="img-fluid img-responsive" src="./images/unil_3.png" alt="" />
                                 </div>
-                              </a>
+                              </Link>
                           </div>
                       </div>
                   </div>
                   <div className="col-md-6 my-2 px-3">
                       <div className="row">
                           <div className="col-4 px-2">
-                              <a href="">
+                              <Link href="/brands">
                                 <div className={`${Styles.store_product} ${Styles.good_one}`}>
                                   <img className="img-fluid img-responsive" src="./images/unil_1.png" alt="" />
                                 </div>
-                              </a>
+                              </Link>
                           </div>
                           <div className="col-4 px-2">
-                              <a href="">
+                              <Link href="/brands">
                                 <div className={`${Styles.store_product} ${Styles.good_two}`}>
                                   <img className="img-fluid img-responsive" src="./images/unil_2.png" alt="" />
                                 </div>
-                              </a>
+                              </Link>
                           </div>
                           <div className="col-4 px-2">
-                              <a href="">
+                              <Link href="/brands">
                                 <div className={`${Styles.store_product} ${Styles.good_three}`}>
                                   <img className="img-fluid img-responsive" src="./images/unil_3.png" alt="" />
                                 </div>
-                              </a>
+                              </Link>
                           </div>
                       </div>
                   </div>
                   <div className="col-md-6 my-2 px-3">
                       <div className="row">
                           <div className="col-4 px-2">
-                              <a href="">
+                              <Link href="/brands">
                                 <div className={`${Styles.store_product} ${Styles.good_one}`}>
                                   <img className="img-fluid img-responsive" src="./images/unil_1.png" alt="" />
                                 </div>
-                              </a>
+                              </Link>
                           </div>
                           <div className="col-4 px-2">
-                              <a href="">
+                              <Link href="/brands">
                                 <div className={`${Styles.store_product} ${Styles.good_two}`}>
                                   <img className="img-fluid img-responsive" src="./images/unil_2.png" alt="" />
                                 </div>
-                              </a>
+                              </Link>
                           </div>
                           <div className="col-4 px-2">
-                              <a href="">
+                              <Link href="/brands">
                                 <div className={`${Styles.store_product} ${Styles.good_three}`}>
                                   <img className="img-fluid img-responsive" src="./images/unil_3.png" alt="" />
                                 </div>
-                              </a>
+                              </Link>
                           </div>
                       </div>
                   </div>
                   <div className="col-md-6 my-2 px-3">
                       <div className="row">
                           <div className="col-4 px-2">
-                              <a href="">
+                              <Link href="/brands">
                                 <div className={`${Styles.store_product} ${Styles.good_one}`}>
                                   <img className="img-fluid img-responsive" src="./images/unil_1.png" alt="" />
                                 </div>
-                              </a>
+                              </Link>
                           </div>
                           <div className="col-4 px-2">
-                              <a href="">
+                              <Link href="/brands">
                                 <div className={`${Styles.store_product} ${Styles.good_two}`}>
                                   <img className="img-fluid img-responsive" src="./images/unil_2.png" alt="" />
                                 </div>
-                              </a>
+                              </Link>
                           </div>
                           <div className="col-4 px-2">
-                              <a href="">
+                              <Link href="/brands">
                                 <div className={`${Styles.store_product} ${Styles.good_three}`}>
                                   <img className="img-fluid img-responsive" src="./images/unil_3.png" alt="" />
                                 </div>
-                              </a>
+                              </Link>
                           </div>
                       </div>
                   </div>
                   <div className="col-md-6 my-2 px-3">
                       <div className="row">
                           <div className="col-4 px-2">
-                              <a href="">
+                              <Link href="/brands">
                                 <div className={`${Styles.store_product} ${Styles.good_one}`}>
                                   <img className="img-fluid img-responsive" src="./images/unil_1.png" alt="" />
                                 </div>
-                              </a>
+                              </Link>
                           </div>
                           <div className="col-4 px-2">
-                              <a href="">
+                              <Link href="/brands">
                                 <div className={`${Styles.store_product} ${Styles.good_two}`}>
                                   <img className="img-fluid img-responsive" src="./images/unil_2.png" alt="" />
                                 </div>
-                              </a>
+                              </Link>
                           </div>
                           <div className="col-4 px-2">
-                              <a href="">
+                              <Link href="/brands">
                                 <div className={`${Styles.store_product} ${Styles.good_three}`}>
                                   <img className="img-fluid img-responsive" src="./images/unil_3.png" alt="" />
                                 </div>
-                              </a>
+                              </Link>
                           </div>
                       </div>
                   </div>
                   <div className="col-md-6 my-2 px-3">
                       <div className="row">
                           <div className="col-4 px-2">
-                              <a href="">
+                              <Link href="/brands">
                                 <div className={`${Styles.store_product} ${Styles.good_one}`}>
                                   <img className="img-fluid img-responsive" src="./images/unil_1.png" alt="" />
                                 </div>
-                              </a>
+                              </Link>
                           </div>
                           <div className="col-4 px-2">
-                              <a href="">
+                              <Link href="/brands">
                                 <div className={`${Styles.store_product} ${Styles.good_two}`}>
                                   <img className="img-fluid img-responsive" src="./images/unil_2.png" alt="" />
                                 </div>
-                              </a>
+                              </Link>
                           </div>
                           <div className="col-4 px-2">
-                              <a href="">
+                              <Link href="/brands">
                                 <div className={`${Styles.store_product} ${Styles.good_three}`}>
                                   <img className="img-fluid img-responsive" src="./images/unil_3.png" alt="" />
                                 </div>
-                              </a>
+                              </Link>
                           </div>
                       </div>
                   </div>

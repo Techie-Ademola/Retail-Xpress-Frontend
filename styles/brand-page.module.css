@@ -1,5 +1,8 @@
 /* Grocery shop styles */
 
+.flash_carousel_body a {
+    text-decoration: none !important;
+}
 .grocery_shop_container {
     position: relative;
     background: transparent;

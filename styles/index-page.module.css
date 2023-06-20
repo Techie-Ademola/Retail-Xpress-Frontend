@@ -1,6 +1,9 @@
 /* * {
     scroll-behavior: smooth;
 } */
+.flash_carousel_body a {
+    text-decoration: none !important;
+}
 .wrapper_container {
     width: 100%;
     max-width: 100%;
@@ -796,9 +799,6 @@
 }
 .grocery_shop_container .flash_head1, .grocery_shop_container .flash_head2, .grocery_shop_container .flash_head3 {
     width: 100%;
-}
-.grocery_shop_container .flash_head2 {
-    
 }
 .grocery_shop_container .flash_head2 h2{
     vertical-align: middle;

@@ -228,7 +228,7 @@ export default function Home() {
                                     <h5>N1000</h5>
                                 </div>
                                 <div className={`${Styles.sub_total_btn}`} >
-                                    <button className="btn">Checkout</button>
+                                    <Link href="" className="btn">Checkout</Link>
                                 </div>
                             </div>
                         </div>

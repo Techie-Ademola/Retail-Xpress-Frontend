@@ -182,7 +182,7 @@
 .sub_total h6 {
     font-size: 18px;
 }
-.sub_total_btn button {
+.sub_total_btn a {
     padding: 15px;
     border-radius: 8px;
     background: #2240AF;
@@ -192,9 +192,9 @@
     border: none;
     font-size: 19px;
 }
-.sub_total_btn button:hover {
-    color: #ced4da;
-    background: #1E3A8A;
+.sub_total_btn a:hover, .sub_total_btn a:focus, .sub_total_btn a:active {
+    color: #ced4da !important;
+    background: #1E3A8A !important;
 }
 .checkout_nav_dropdown {
     padding: 1.5em 3em;

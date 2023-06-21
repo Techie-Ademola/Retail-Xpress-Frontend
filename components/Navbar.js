@@ -13,11 +13,17 @@ function Navbar() {
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const navbar = document.querySelector('.home_header');
+      const body = document.querySelector('body'); // Add this line to select the body element
+
       window.addEventListener('scroll', () => {
         if (window.scrollY > 450) {
           navbar.classList.add('scrolled');
+          body.classList.add('bodyjerk'); // Add this line to add the class to the body element
+
         } else {
           navbar.classList.remove('scrolled');
+          body.classList.remove('bodyjerk'); // Add this line to remove the class from the body element
+
         }
       });
       let toggle = document.querySelector('.navbar_toggler');
